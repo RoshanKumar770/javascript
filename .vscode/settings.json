@@ -1,0 +1,7 @@
+{
+  "C_Cpp.debugger.useBacktickCommandSubstitution": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "backtick"
+  ],
+  "workbench.settings.openDefaultKeybindings": false
+}
