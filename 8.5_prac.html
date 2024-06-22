@@ -1,0 +1,66 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title>coin Flip</title>
+</head>
+
+<body>
+  <button onclick="playgame(guess);">Heads</button>
+  <button onclick="playgame(guess);">tails</button>
+  <script>
+    function playgame(guess) {
+      const rand_no = Math.random();
+
+      let result = '';
+      if (rand_no < 0.5) {
+        result = 'head';
+      }
+      else {
+        result = 'tail';
+      }
+
+
+      if (guess === result) {
+        console.log('You Win');
+      }
+      else {
+        console.log('You Lose');
+      }
+    }
+  </script>
+</body>
+
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Coin Flip</title>
+</head>
+
+<body>
+  <button onclick="playgame('head')">Heads</button>
+  <button onclick="playgame('tail')">Tails</button>
+  <script>
+    function playgame(guess) {
+      const rand_no = Math.random();
+      let result = '';
+      if (rand_no < 0.5) {
+        result = 'head';
+      } else {
+        result = 'tail';
+      }
+
+      if (guess === result) {
+        console.log('You Win');
+      } else {
+        console.log('You Lose');
+      }
+    }
+  </script>
+</body>
+
+</html>
