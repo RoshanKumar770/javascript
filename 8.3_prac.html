@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8.3 Practice</title>
+  </head>
+  <body>
+    <script>
+      const product1={
+        name:'bag',
+        price:499
+      };
+      const product2 = product1 ; 
+
+      function isSameProduct(product1,product2){
+        if(product1 === product2){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+      console.log(isSameProduct(product1,product2));
+    </script>
+  </body>
+</html>
