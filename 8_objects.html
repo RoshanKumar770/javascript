@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Objects</title>
+</head>
+
+<body>
+
+  <script>
+    /*
+
+    // const product = {
+    //   name: 'socks',
+    //   price: 1090
+    // };
+    // console.log(product);
+    // console.log(product.name);
+    // console.log(product.price);
+
+    // product.name = 'cotton socks';
+    // console.log(product);
+
+    // product.newProperty = true;
+    // console.log(product);
+
+    // delete product.newProperty;
+    // console.log(product);
+
+    const product2 = {
+      name: 'shirt',
+      'delivery-time': '1 day',
+      rating: {  // nested objects
+        stars: 4.5,
+        count: 87
+      },
+      fun: function function1() { // function inside object called Method
+        console.log('function inside object');
+      }
+    }
+    console.log(product2);
+    console.log(product2.name); // dot notation
+    console.log(product2['name']); //bracket notation
+    console.log(product2['delivery-time']);
+    console.log(product2.rating.count);
+    product2.fun();
+
+    // BUILD IN OBJECTS
+    console.log(typeof console);
+    console.log(typeof console.log);
+    console.log(typeof Math.random);
+
+
+//  LOCAL STORAGE
+    // Getting a value inside of local storage
+       localStorage.setItem('message','hello: INSIDE local storage');
+
+    // Getting value out of the local storage
+       console.log(localStorage.getItem('message'));
+      
+       localStorage.removeItem('message');
+
+
+    //JSON - javascript object Notation 
+    //converting javascript object to JSON (Condition is that we should convert the javascript code to Strings)
+
+    console.log(JSON.stringify(product2));
+
+    //converting JSON object to javascript object - JSON.parse 
+    const jsonstring = JSON.stringify(product2);
+    console.log(JSON.parse(jsonstring));
+
+    */
+    // AUTO-BOXING - a special feature of javascript that the string in a special object
+    console.log('hello'.length);
+    console.log('hello'.toUpperCase());
+
+    const object1 = {
+      message: 'hello'
+    };
+    const object2 = object1; // comparing reference
+
+    object1.message = 'Good job!';
+    console.log(object1);
+    console.log(object2);
+
+    const object3 = {
+      message: 'Good job!'
+    };
+    console.log(object3 === object1); // not same bcoz objects are references
+    console.log(object2 === object1); // same bcoz both objects have same references
+
+    const object4 = {
+      message: 'Good job!',
+      price: 799
+    };
+    // const message = object4.message;
+
+    const{message,price}=object4;// shortcut called Destructuring
+    console.log(message);
+    console.log(price);
+
+    const object5 = {
+      //message: message  
+      message,   // shorthand property
+
+      // method: function function1(){
+      //   console.log('method');
+      // }
+      
+      method(){
+        console.log('method');   // shorthand method
+      }
+    };
+    console.log(object5);
+
+    object5.method();
+  </script>
+</body>
+
+</html>

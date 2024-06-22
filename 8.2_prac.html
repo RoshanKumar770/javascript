@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>cart quantity</title>
+</head>
+
+<body>
+  <script>
+    product = {
+      name: 'basketball',
+      price: '2095 cents',
+      'delivery-time': '3 days'
+    };
+    console.log(product);
+
+
+    product.price = '2595 cents';
+    console.log(product);
+
+    product['delivery-time'];
+
+    console.log(product);
+
+
+    const product1 = {
+      name: 'shirt',
+      price: 400
+    }
+    const product2 = {
+      name: 'ball',
+      price: 500
+    }
+    function ComparePrice(product1, product2) {
+      if (product1.price < product2.price) {
+        return product1;
+      }
+      else{
+        return product2;
+      }
+    }
+    console.log(ComparePrice(product1,product2));
+
+  </script>
+</body>
+
+</html>

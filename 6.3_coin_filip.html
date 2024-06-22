@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>coin Flip</title>
+</head>
+
+<body>
+  <script>
+    const rand_no = Math.random();
+    const resutl='';
+    if(rand_no<0.5){
+      result='head';
+    }
+    else{
+      result='tail';
+    }
+    const guess='head';
+     if(guess===result){ 
+      console.log('You Win');
+    }
+    else{
+      console.log('You Lose');
+    }
+    // By ternary Operator --->
+    // rand_no<0.5 ? result='head':result='tail';
+    // const guess='head';
+    // guess===result?console.log('You win'):console.log('You Lose');
+  </script>
+</body>
+
+</html>
