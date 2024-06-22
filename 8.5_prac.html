@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -6,23 +6,60 @@
 </head>
 
 <body>
+  <button onclick="playgame(guess);">Heads</button>
+  <button onclick="playgame(guess);">tails</button>
   <script>
-    const rand_no = Math.random();
-    const resutl='';
-    if(rand_no<0.5){
-      result='head';
+    function playgame(guess) {
+      const rand_no = Math.random();
+
+      let result = '';
+      if (rand_no < 0.5) {
+        result = 'head';
+      }
+      else {
+        result = 'tail';
+      }
+
+
+      if (guess === result) {
+        console.log('You Win');
+      }
+      else {
+        console.log('You Lose');
+      }
     }
-    else{
-      result='tail';
+  </script>
+</body>
+
+</html>
+ -->
+
+ <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Coin Flip</title>
+</head>
+
+<body>
+  <button onclick="playgame('head')">Heads</button>
+  <button onclick="playgame('tail')">Tails</button>
+  <script>
+    function playgame(guess) {
+      const rand_no = Math.random();
+      let result = '';
+      if (rand_no < 0.5) {
+        result = 'head';
+      } else {
+        result = 'tail';
+      }
+
+      if (guess === result) {
+        console.log('You Win');
+      } else {
+        console.log('You Lose');
+      }
     }
-    const guess='head';
-     if(guess===result){ 
-      console.log('You Win');
-    }
-    else{
-      console.log('You Lose');
-    }
-    
   </script>
 </body>
 
